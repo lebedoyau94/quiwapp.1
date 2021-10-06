@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/quiwapp/public_html/
-    - /bin/cp -R images $DEPLOYPAT
+    - export DEPLOYPATH=/home/quiwapp/public_html/Maurospizza/
+    - /bin/rsync -av Pub/ $DEPLOYPATH
