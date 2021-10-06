@@ -1,0 +1,5 @@
+RewriteRule ^webservice/conexionusuario/$   webservice/quiwapp.php?key_function=conexionusuario [nc,qsa]
+RewriteRule ^webservice/conexionusuario   webservice/quiwapp.php?key_function=conexionusuario [nc,qsa]
+
+RewriteRule ^webservice/getcliente/$   webservice/quiwapp.php?key_function=getcliente [nc,qsa]
+RewriteRule ^webservice/getcliente   webservice/quiwapp.php?key_function=getcliente [nc,qsa]

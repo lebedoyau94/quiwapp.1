@@ -1,0 +1,121 @@
+.start{ justify-self:start; } .start_v{ align-self: start;}
+.end{ justify-self:end; } .end_v{ align-self: end;}
+.center{ justify-self:center; } .center_v{ align-self: center;}
+.stretch{ justify-self:stretch; } .stretch_v{ align-self: stretch;}
+.between{ align-self: stretch; justify-content: space-between; }
+
+.grid_col2{ grid-template-columns: 1fr 1fr; }
+
+.jc_start{ justify-content: start; } .ja_start{	align-content: start; }
+.jc_center{ justify-content: center; } .ja_center{ align-content: center; }
+
+.gap03{ grid-gap: 0.3rem; }
+/*contenedor input con icono div caja luego el input y luego un label*/
+.grid_ipt_icon{
+	display: grid;
+	grid-template-columns: 2.5rem 1fr;
+	background-color: white;
+	border-radius: 5px;
+}
+.grid_ipt_icon label{
+	order: -1;
+	font-size: 1.5rem;
+	color: hsl(0, 0%, 50%);
+	background: hsl(0, 0%, 80%);
+	background: transparent;	
+	width: 2.5rem;
+	border:1px solid black;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-right: none;
+	padding: 0.3rem;	
+}
+.grid_ipt_icon input{
+	width: 100%;
+	font-size: 0.77rem;
+	padding: 0.7rem;
+	border:1px solid black;  
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-left: none;
+	background: transparent;	
+	color: hsl(0,0%,40%);
+	font-weight: 900;
+	outline:none;
+}
+.grid_ipt_icon input:focus{
+	border:1px solid hsl(33, 100%, 50%); 	
+	border-left: none;
+	background: hsla(0,0%,95%,0.7);
+
+}
+.grid_ipt_icon input:focus ~ label{
+	border:1px solid hsl(33, 100%, 50%); 
+	border-right: none;
+	background: hsla(0,0%,95%,0.7); 
+}
+
+/***** contenedores  grid hijos ******/
+.grid{ 
+	display:grid; 	
+	grid-template-columns: 1fr; 
+	grid-template-rows: repeat(auto-fit,minmax(min-content,max-content));
+	overflow-y: auto;
+}
+.grid_auto18{
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+	grid-template-rows: repeat(auto-fit,minmax(min-content,max-content));
+}
+.grid_auto12{
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
+	grid-template-rows: repeat(auto-fit,minmax(min-content,max-content)); 
+}
+.grid_campo_check{ 
+	width: 6rem;
+	display: grid;
+	grid-template-columns: repeat(2,minmax(min-content,max-content));  
+	align-items: center;
+	justify-items:end;
+}
+/********** fin ********/
+/****** contenedores flex ********/
+
+.flex_c_r{
+	display: flex;
+	justify-content: center;
+	align-content:  center; 
+	flex-direction: row;
+}
+.flex_c_c{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column; 
+}
+ /*************** fin ******************/
+
+.form{
+	display:grid; 	
+	grid-template-columns: 1fr; 
+	grid-template-rows: repeat(auto-fit,minmax(min-content,max-content));
+	overflow-y: auto;
+	padding: 1rem;
+	grid-gap: 1rem;
+	border-radius: 5px;
+}
+#frm_login,#frm_chofer,#frm_pedido{
+	min-width:17rem;
+	max-width: 25rem;	
+	background: hsl(0,0,95%);
+}
+
+
+@media screen and (max-width: 955px){
+	#sec_pedido .grid_col2{
+		grid-template-columns: 1fr;
+	}
+}

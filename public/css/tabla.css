@@ -1,0 +1,65 @@
+.tab_x{
+	background: white; 
+}
+
+.tab_x thead tr th{ 
+	font-size: 1.5rem;
+	padding:0.4rem 2rem 0.4rem 0.2rem;
+	font-weight: bold;
+	border-bottom: 1px solid hsl(0, 0%, 50%);;
+	color: white;	
+	background: hsl(210, 14.3%, 53.3%);
+	width: 60%;
+}
+
+.tab_x tbody tr td{
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 0.4rem 2rem 0.4rem 0.4rem;
+	color: hsl(0, 0%, 50%);
+	border-bottom:  1px solid var(--fondo-gris);
+	width: 60%;
+}
+.tab_x tbody tr:nth-child(odd){ background: var(--fondo-pantalla); }
+
+.tab_x .fijo_x{
+	position: sticky; 
+	left: 0;
+	z-index: 1;
+}
+.tab_x .hfijo_x{
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	width: 60% !important;
+}
+.tab_x .hfijo{ 
+	position: sticky; 
+	top: 0;
+	z-index: 2; 
+	
+}
+.tab_x tbody tr .fijo_x{ background:transparent;} 
+
+
+.tab_x tbody tr:nth-child(odd) .fijo_x{ background: transparent;}
+.tab_x tr{ border: 1px solid var(--fondo-gris); }
+
+
+.check_c:checked ~ label{
+	background: var(--rgba-primary-1);  
+	color: var(--rgba-secondary-1-4);
+}
+.content_tab{
+	margin: 0 auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-top: 1px solid var(--fondo-gris);
+	border-left:1px solid var(--fondo-gris);
+	border-right: 1px solid var(--fondo-gris);
+	border-radius: 5px;
+	margin-bottom: 0.3rem;
+}
+.t_carta{ min-width: 35rem; max-width: 40rem; width: 100%;}
+.c_t_carta{ max-width: 40rem; }

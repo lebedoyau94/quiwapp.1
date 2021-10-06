@@ -1,0 +1,118 @@
+*{ 
+  margin: 0; 
+  padding: 0; 
+  font-size: 100%;
+  font-weight: normal; 
+  font-style: normal; 
+  font-family: Verdana,serif,Tahoma,Arial;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;  
+}
+/*html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: sans-serif;
+    padding: 0 10px;
+    height: 100%;
+    background: hsla(180, 50%, 50%,0.7);
+    margin: 0;
+  }*/
+  
+  h1 {
+    text-align: center;
+    font-size: 20px;
+    color: hsl(0,0%,50%);
+    margin: 0;
+    padding: 15px;
+  }
+  
+  #container{
+    background: hsla(180, 50%, 50%,0.7);
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit,minmax(min-content,max-content));
+    overflow-y: auto;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-content: start;
+  }
+  .div{
+    justify-self:center;
+    position: relative;
+    height: 50px;
+    width: 50px;  
+    margin:10px;
+  }
+  
+
+  .img{
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 0 black;
+    transition: 1s;
+  }
+.btn-gr {background-image: linear-gradient(to right, #D1913C 0%, #FFD194  51%, #D1913C  100%)}         
+.btn-gr {
+  text-align: center;
+  text-transform: uppercase; 
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;  
+  display: block;
+  cursor: pointer;
+}
+.btn-gr:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.contenedor_video{  
+  height: 300px;
+  max-height: 70vh;
+  width: 300px;
+  padding: 5px;
+  border-radius: 5px;
+  justify-self:center;
+  display: grid;
+  grid-auto-columns: 1fr;
+  align-items: start;
+}
+#video{  
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 5px 0 hsl(0,0%,60%);
+}
+  #qr-canvas {
+    margin: auto;
+    width: calc(100% - 20px);
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
+  #btn-scan-qr {
+    cursor: pointer;
+  }
+  
+  #btn-scan-qr img {
+    height: 10em;
+    padding: 15px;
+    margin: 15px;
+    background: white;
+  }
+  
+  #qr-result {
+    font-size: 1.2em;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 135px;
+    background-color: lawngreen;
+  }
+  
