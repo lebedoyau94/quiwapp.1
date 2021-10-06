@@ -2,4 +2,4 @@
 deployment:
    task
    - export DEPLOYPATH=/home/public_html/Maurospizza/
-   -/bin/rsync -a / $ DEPLOYPATH
+   - /bin/rsync -a / $ DEPLOYPATH
