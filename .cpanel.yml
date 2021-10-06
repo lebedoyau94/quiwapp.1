@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/quiwapp/public_html/Maurospizza/
-    - /bin/rsync -a Pub/ $DEPLOYPATH
+    - /bin/cp -R Pub $DEPLOYPATH
